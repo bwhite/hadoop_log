@@ -18,6 +18,6 @@ Can be used from Python with
 import hadoop_log
 hadoop_log.main()
 or
-hadoop_log.main(http://myjobtracker.com:50030/)
+hadoop_log.main('http://myjobtracker.com:50030/')
 or
-hadoop_log.main(http://myjobtracker.com:50030/, 3235)
+hadoop_log.main('http://myjobtracker.com:50030/', 3235)
