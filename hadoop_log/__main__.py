@@ -42,7 +42,7 @@ def read_stderr(task_urls):
     return '\n'.join(out)
 
 
-def main(base_url, job_num):
+def main(base_url=None, job_num=None):
     if not base_url:
         try:
             base_url = os.environ['HADOOP_JOB_TRACKER_URL']

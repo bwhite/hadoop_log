@@ -11,6 +11,13 @@ python -m hadoop_log
 Print stderr for all tasks for a specific job
 python -m hadoop_log --job_num 3235
 
-
 If you want to specify the job tracker manually use
 python -m hadoop_log --base_url http://myjobtracker.com:50030/
+
+Can be used from Python with
+import hadoop_log
+hadoop_log.main()
+or
+hadoop_log.main(http://myjobtracker.com:50030/)
+or
+hadoop_log.main(http://myjobtracker.com:50030/, 3235)
