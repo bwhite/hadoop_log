@@ -1,0 +1,16 @@
+Simple Hadoop log scraper
+Brandyn White <bwhite@dappervision.com>
+License: GPLv3
+
+Set the HADOOP_JOB_TRACKER_URL environmental variable for simplicity.  It takes a value like 'http://myjobtracker.com:50030/'
+
+
+Print stderr for all tasks of the most recent job (both of these examples assume you set HADOOP_JOB_TRACKER_URL)
+python -m hadoop_log
+
+Print stderr for all tasks for a specific job
+python -m hadoop_log --job_num 3235
+
+
+If you want to specify the job tracker manually use
+python -m hadoop_log --base_url http://myjobtracker.com:50030/

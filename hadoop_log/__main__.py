@@ -3,7 +3,6 @@ import re
 import argparse
 import os
 from BeautifulSoup import BeautifulSoup
-#base_url = 'http://bespin00.umiacs.umd.edu:50030/'
 
 
 def read_jobs(base_url):
@@ -20,7 +19,7 @@ def read_recent_job(base_url):
 
 
 def read_task_urls(base_url, start_time, job_num):
-    # URL of the form:  http://bespin00.umiacs.umd.edu:50030/
+    # URL of the form:  http://blah:50030/
     out = []
     for task_type in ['m', 'r']:
         task_num = 0
